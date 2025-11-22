@@ -22,8 +22,13 @@ def sum_even(input_nums: List[int]) -> int:
 Вход: [9, 7, 5, 3, 1]
 Выход: 0
 '''
-print(sum_even([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+result : int =  sum_even([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+assert result == 30
 
-print(sum_even([10, 20, 30, 40, 50]))
+result : int =  sum_even([10, 20, 30, 40, 50])
+assert result == 150
 
-print(sum_even([9, 7, 5, 3, 1]))
+result : int =  sum_even([9, 7, 5, 3, 1])
+assert result == 0
+
+print('Done')

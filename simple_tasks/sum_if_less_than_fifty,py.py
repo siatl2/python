@@ -25,5 +25,10 @@ def sum_if_less_than_fifty(num_one: int, num_two: int) -> Optional[int]:
 - num_two = 100
 Выход: None
 '''
-print(sum_if_less_than_fifty(20, 20))
-print(sum_if_less_than_fifty(20, 100))
+result : Optional[int] = sum_if_less_than_fifty(20, 20)
+assert result == 40
+
+result : Optional[int] = sum_if_less_than_fifty(20, 100)
+assert result == None
+
+print('Done')

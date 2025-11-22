@@ -20,11 +20,16 @@ def filter_strings_containing_a(input_strs: List[str]) -> List[str]:
 Вход: ["bbbb", "cccc"]
 Выход: []
 '''
-input_list = ['apple', 'banana', 'cherry', 'date']
-print(filter_strings_containing_a(input_list))
+input_list : List[str] = ['apple', 'banana', 'cherry', 'date']
+result : List[str] = filter_strings_containing_a(input_list)
+assert result == ['apple', 'banana', 'date']
 
-input_list = []
-print(filter_strings_containing_a(input_list))
+input_list : List[str] = []
+result : List[str] = filter_strings_containing_a(input_list)
+assert result == []
 
-input_list = ['bbbb', 'cccc']
-print(filter_strings_containing_a(input_list))
+input_list : List[str] = ['bbbb', 'cccc']
+result : List[str] = filter_strings_containing_a(input_list)
+assert result == []
+
+print('Done')
